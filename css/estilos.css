@@ -1,0 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.containers{
+    padding: 50px 0;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: whitesmoke;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+    width: 100%;
+    height: 700px;
+    background: #e65c00;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f9d52370, #e65c0070), url(../img/header.jpg);   
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f9d52386, #e65c0081), url(../img/principal.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+nav > a{
+    color: #fafafa;
+    font-size: 19px;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 11px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+header .textos-header{
+    display: flex;
+    height: 480px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.textos-header h1{
+    font-size: 60px;   
+    color: #fafafa;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+
+.textos-header h2{
+    font-size: 50px;   
+    font-weight: 300;
+    color: #fafafa;
+    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+}
+
+
+
+.imagenprincipal{
+    width: 100%;
+    align-items: center;
+}
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port{
+    width: 47%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: white;
+    display: flex;
+    width: 48%;
+    height: 220px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+}
+
+.cards .cardx{
+    background: WHITE;
+    display: flex;
+    width: 48%;
+    height: 220px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+
+}
+
+.cards .card img{
+    width: 20%;
+    height: 100px;
+    object-fit: cover;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.cards .cardx img{
+    width: 200px;
+    height: 80px;
+    padding-left: 5px;
+    padding-right: 5px;
+    object-fit: fill;
+    
+}
+
+.cards .card > .contenido-texto-card{
+    width: 80%;
+}
+
+.cards .card > .contenido-texto-card{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+.contenido-texto-card{
+    text-align: justify;
+    padding-right: 5px;
+}
+
+footer{
+    background: #818181;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.containers-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.containers-foo{
+    text-align: center;
+}
+
+.containers-foo h4{
+    color: #000000;
+    border-bottom: 3px solid #e65c00;
+}
+
+.containers-foo p{
+    color: #000000;
+}
+
+.containers-texto{
+    text-align: justify;
+}
+
+@media screen and (max-width:500px){
+    header{
+        background-position: center;
+        background-size: fill;
+    }
+    header .textos-header{
+        justify-content: center;
+        align-items: center;
+    }
+    .containers .containers-texto{
+        width: 90%;
+    }
+    .imagen-port{
+        width: 45%;
+    }
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards .card{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .cards .cardx{
+        width: 90%;
+    }
+    
+}
